@@ -18,3 +18,8 @@ def index(request):
     context = {"hijo": hijo, "nombre": "claudia andrea", "comidas": lista, "alumnos":alumnos } 
     
     return render(request, 'alumnos/index.html', context)
+
+def crud (request):
+    alumnos = Alumno.objects.all()
+    context = {'alumnos': alumnos}
+    return render (request, 'alumnos/alumnos_list.html', context)
