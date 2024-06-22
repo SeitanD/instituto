@@ -91,7 +91,7 @@ def alumnos_findEdit(request, pk):
     
 def alumnosUpdate(request):
 
-    if request.method == "post":
+    if request.method == "POST":
         
         rut=request.POST['rut']
         nombre=request.POST['nombre']
