@@ -10,9 +10,9 @@
     
     <div style=" text-align: center;">
         <h2>Formulario Crud de Alumnos</h2>
-        <form action="alumnosAdd" method="post" >
+        <form action="alumnosAdd" method="POST" >
             {% csrf_token %}
-
+            
             <pre>Rut:                     <input type="text" name="rut"    ></pre>
             <pre>Nombre:                  <input type="text" name="nombre" ></pre>
             <pre>Apellido P.:             <input type="text" name="paterno"></pre>
@@ -28,7 +28,7 @@
             <pre>Direccion:               <input type="text" name="direccion"></pre>
 
             <input type="submit" name="opcion" value="Agregar">
-
+            
         </form><br><br>
         <a href="{% url 'crud' %}"> Volver </a>
         <br>
